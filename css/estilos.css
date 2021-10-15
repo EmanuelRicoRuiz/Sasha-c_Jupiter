@@ -2,7 +2,32 @@
 	--rojo: #E50914;
 	--fondo: #ffffff25;
 }
-
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 500px;
+	grid-gap: 20px;
+  }
+.proyectoMain{
+	background-color: #126782;
+	color: azure;
+	border-radius: 20px;
+	font-size:16px;
+	height: 450px;
+}
+.proyectoMain button{
+	border-radius: 20px;
+	font-size: 18px;
+	width: 250px;
+	
+}
+.imgProyecto{
+	background-color: white;
+	width: 250px;
+	padding: 25px;
+	margin-top: 10%;
+	height: 250px;
+}
 
 
 body {

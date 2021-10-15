@@ -171,6 +171,7 @@ h1 {
 }
 .simbolo{
 	font-size: 360px;
+    width: 100px;
 }
 #actual{
 	border-radius: 300px;
