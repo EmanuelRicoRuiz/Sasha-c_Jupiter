@@ -1,0 +1,11 @@
+body{
+    background-color: #e7f2f3ea;
+  }
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    height: 80px;
+  }

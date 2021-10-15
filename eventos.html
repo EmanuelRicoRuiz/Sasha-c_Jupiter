@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal Jupiter</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+    <script src="JAVASCRIPT/firebase.js"></script>
+    <script src="JAVASCRIPT/login.js"></script>
+    <script src="./JAVASCRIPT/menu.js"></script>
+    <script src="./JAVASCRIPT/app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">
+        <h2 id="simbolo">&#9776;</h2>
+    </label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu" id="menu">
+
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <img onclick="myFunction()" class="drop-button" src="./IMG/logo2.png" width="100">
+        <div id="myDropdown" class="dropdown-content show">
+            <center>
+                <a href="main.html"><img src="./IMG/analitica.png" alt=""></a>
+                <a  id="actual"  href="eventos.html"><img src="./IMG/evento.png" alt=""></a>
+                <a href="espacios.html"><img src="./IMG/classroom.png" alt=""></a>
+                <a href="#"><img src="./IMG/informacion.png" alt=""></a>
+                <a  href="articulos.html"><img src="./IMG/responsive.png" alt=""></a>
+                <a href="encuestas.html"><img src="./IMG/surveyor.png" alt=""></a>
+            </center>
+        </div>
+    </div>
+    <div id="contenido">
+
+    </div>
+</body>
+<script src="./JAVASCRIPT//eventos.js"></script>
+</html>
