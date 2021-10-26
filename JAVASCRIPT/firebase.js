@@ -39,3 +39,4 @@ const getProyectos=()=>db.collection("proyectos").get();
 const getEncuestas=()=>db.collection("encuesta").get();
 const getPreguntas=(numeroEncuesta)=>db.collection("encuesta").where("numeroEncuesta","==",numeroEncuesta).get();
 const getArticulos=()=> db.collection("articulos").get();
+const getProyecto=(id)=>db.collection("proyectos").doc(id).get();

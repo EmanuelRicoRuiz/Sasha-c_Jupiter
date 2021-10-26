@@ -9,7 +9,45 @@ const RegistrarDatosProyecto=async ()=>{
     let nombre=document.getElementById("nombreproyecto").value
     let categoria =document.getElementById("Categoria").value;
     let descripcion=document.getElementById("DescripcionProyecto").value;
-    db.collection("proyectos").doc().set({nombre,categoria,descripcion,urlFoto});
+    let Programa=document.getElementById("Programa").value;
+    let Publico=document.getElementById("Publico").value;
+    let contenidoInnovador=document.getElementById("contenidoInnovador").value;
+    let areaAplicacion=document.getElementById("areaAplicacion").value;
+    let impacto=document.getElementById("impacto").value;
+    let solucionBrindada=document.getElementById("solucionBrindada").value;
+    let objetivo=document.getElementById("objetivo").value;
+    let Participantes=document.getElementById("Participantes").value;
+    let Metodologia=document.getElementById("Metodologia").value;
+    let palabra=document.getElementById("palabras").value;
+    let palabras=palabra.split(",")
+    let idioma=document.getElementById("idioma").value;
+    let licencia=document.getElementById("licencia").value;
+    let Asesores=document.getElementById("Asesores").value;
+    Asesores=Asesores.split(",");
+    await firebase.auth().onAuthStateChanged(async (user)=>{
+      let dueño=user.uid
+      await db.collection("proyectos").doc().set({nombre,
+        categoria,
+        descripcion,
+        urlFoto,
+        Programa,
+        Publico,
+        contenidoInnovador,
+        areaAplicacion,
+        impacto,
+        solucionBrindada,
+        objetivo,
+        Participantes,
+        Metodologia,
+        palabras,
+        idioma,
+        licencia,
+        Asesores,
+        dueño
+      });   
+  })
+    
+
     urlFoto=undefined
     Swal.fire({
       position: 'top-end',

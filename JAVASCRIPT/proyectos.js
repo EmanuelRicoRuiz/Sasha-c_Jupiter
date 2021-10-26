@@ -12,8 +12,8 @@ const mostrarProyectos = async () => {
                     <img width=200 src=${datos.urlFoto} ><br>
                   </div>
                   ${categoria.nombre}<br>
-                  ${datos.descripcion}<br><br>
-                  <button class="borderBoton btn btn-warning">${datos.nombre}</button>
+                  ${datos.publico}<br><br>
+                  <button id="${element.id}" onclick="verficha(this)" class="borderBoton btn btn-warning">${datos.nombre}</button>
                   <br><br>
                 </center>
               </div>

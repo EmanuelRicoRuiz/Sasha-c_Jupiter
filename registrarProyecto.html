@@ -65,7 +65,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./main.html">Proyectos</a>
+                                <a class="nav-link " href="./main.html">Proyectos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./espacios.html">Espacios</a>
@@ -89,9 +89,7 @@
             <div id="contenido">
                 <center>
                     <br><br>
-                   
-        
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
                                     <h3>Añadir Proyecto</h3>
@@ -102,23 +100,90 @@
                                             <hr>
                                         </div>
                                         <div class="form-group" id="box">
-                                            <h5>Nombre del Proyecto</h5>
+                                            <h5>Nombre del Proyecto*</h5>
                                             <input type="text" id="nombreproyecto" class="form-control"
-                                                placeholder="Nombre del Proyecto" autofocus>
+                                                placeholder="Nombre del Proyecto*" autofocus>
                                         </div>
                                         <div class="form-group" id="box">
-                                            <h5>Categoria del proyecto</h5>
+                                            <h5>Categoria del proyecto*</h5>
                                             <select id="Categoria" class="form-control">
                                                 <option value="">Categoria</option>
                                                 
                                             </select>
                                         </div>
                                         <div class="form-group" id="box">
-                                            <h5>Descripción del proyecto</h5>
-                                            <input type="text" id="DescripcionProyecto" class="form-control"
-                                                placeholder="Descripción del proyecto">
+                                            <h5>Descripción del proyecto*</h5>
+                                            <textarea type="text" id="DescripcionProyecto" class="form-control"
+                                                placeholder="Descripción del proyecto"></textarea>
                                         </div>
-        
+                                        <div class="form-group" id="box">
+                                            <h5>Programa*</h5>
+                                            <input type="text" id="Programa" class="form-control"
+                                                placeholder="Nombre del Programa*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Público objetivo*</h5>
+                                            <input type="text" id="Publico" class="form-control"
+                                                placeholder="Público objetivo*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Contenido innovador*</h5>
+                                            <input type="text" id="contenidoInnovador" class="form-control"
+                                                placeholder="Contenido innovador*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Áreas de aplicación*</h5>
+                                            <input type="text" id="areaAplicacion" class="form-control"
+                                                placeholder="Áreas de aplicación*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Impacto*</h5>
+                                            <input type="text" id="impacto" class="form-control"
+                                                placeholder="Impacto*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>¿Qué solución brinda?*</h5>
+                                            <textarea type="text" id="solucionBrindada" class="form-control"
+                                                placeholder="¿Qué solución brinda?*"></textarea>
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Objetivos*</h5>
+                                            <input type="text" id="objetivo" class="form-control"
+                                                placeholder="Objetivos*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Participantes*</h5>
+                                            <input type="text" id="Participantes" class="form-control"
+                                                placeholder="Participantes*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Metodología utilizada para el desarrollo del proyecto*</h5>
+                                            <input type="text" id="Metodologia" class="form-control"
+                                                placeholder="Metodología utilizada para el desarrollo del proyecto*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Palabras clave del proyecto*</h5>
+                                            <input type="text" id="palabras" class="form-control"
+                                                placeholder="Palabras clave del proyecto separadas con coma sin espacios*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Idioma del contenido*</h5>
+                                            <input type="text" id="idioma" class="form-control"
+                                                placeholder="Idioma del contenido*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Tipo de licencia*</h5>
+                                            <input type="text" id="licencia" class="form-control"
+                                                placeholder="Tipo de licencia*">
+                                        </div>
+                                        <div class="form-group" id="box">
+                                            <h5>Asesores*</h5>
+                                            <input type="text" id="Asesores" class="form-control"
+                                                placeholder="Asesores separado con coma sin espacios*">
+                                        </div>
+                                        
+
+                                        
                                         <hr>
                                         <div class="form-group">
         
@@ -150,7 +215,11 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <center>
+            <img src="https://udemedellin.edu.co/wp-content/uploads/2021/02/logo_udemedellin2.png" width="150">
+        </center>
+    </footer>
 </body>
 
 <script src="plugins/sweetAlert2/sweetalert2.all.min.js"></script>
@@ -158,5 +227,6 @@
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="./JAVASCRIPT/categoria.js"></script>
 
 </html>
